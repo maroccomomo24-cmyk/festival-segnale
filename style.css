@@ -224,3 +224,6 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+.info-swiper {
+  padding-bottom: 3rem;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Segnale — Info e luoghi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">Segnale<span>Festival di design</span></a>
+            <nav aria-label="Navigazione principale">
+                <a href="index.html">Home</a>
+                <a href="programma.html">Programma</a>
+                <a href="info.html" aria-current="page">Info e luoghi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenuto" class="container">
+        <section class="intro" aria-labelledby="titolo-info">
+            <p class="eyebrow">12–13 giugno · Torino · Festival immaginario</p>
+            <h1 id="titolo-info">Info e luoghi</h1>
+            <p class="lead">Tutte le informazioni utili e la mappa delle sedi del festival.</p>
+        </section>
+        <section class="content-section" aria-labelledby="titolo-luoghi">
+  <h2 id="titolo-luoghi">Le sedi del festival</h2>
+
+  <div class="swiper info-swiper">
+    <div class="swiper-wrapper">
+
+      <article class="swiper-slide luogo-card">
+        <img src="assets/sede-centrale.jpg" alt="Edificio della sede centrale del Politecnico di Torino in Corso Duca degli Abruzzi.">
+        <div class="luogo-info">
+          <h3>Sede centrale</h3>
+          <p>Corso Duca degli Abruzzi 24 — Officina Nord nel festival immaginario.</p>
+        </div>
+      </article>
+
+      <article class="swiper-slide luogo-card">
+        <img src="assets/politecnico-valentino.jpg" alt="Edificio del Politecnico di Torino presso il Castello del Valentino.">
+        <div class="luogo-info">
+          <h3>Politecnico al Valentino</h3>
+          <p>Viale Mattioli 39 — Spazio Forma nel festival immaginario.</p>
+        </div>
+      </article>
+
+      <article class="swiper-slide luogo-card">
+        <img src="assets/mirafiori.jpg" alt="Edificio della sede di Mirafiori del Politecnico di Torino.">
+        <div class="luogo-info">
+          <h3>Sede di Mirafiori</h3>
+          <p>Corso Luigi Settembrini 178 — Cortile Comune nel festival immaginario.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.info-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+</body>
+</html>S
