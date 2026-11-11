@@ -273,3 +273,9 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+.info-swiper .swiper-button-prev:focus-visible,
+.info-swiper .swiper-button-next:focus-visible {
+  outline: 3px solid var(--colore-testo);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
