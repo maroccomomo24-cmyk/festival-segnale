@@ -8,7 +8,7 @@
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
   --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-titoli: 'BBH Bogle', sans-serif;
 }
 
 * {
@@ -44,8 +44,12 @@ a:focus-visible {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 1.25rem 0;
-  border-bottom: 4px solid var(--colore-primario); /* Dinamico basato sulla palette */
+  border-bottom: 4px solid var(--colore-primario);
+  background: var(--colore-sfondo);
 }
 .brand {
   display: inline-block;
@@ -64,13 +68,17 @@ a:focus-visible {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
   margin-top: 1rem;
 }
 
 nav a {
   display: inline-block;
-  margin-right: 1rem;
-  padding: 0.25rem 0;
+  margin-right: 0;
+  padding: .25rem 0;
 }
 
 nav a[aria-current="page"] {
@@ -217,6 +225,12 @@ h3 {
   .event-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: .5rem;
+}
 }
 
 @media (min-width: 1024px) {
@@ -271,6 +285,11 @@ h3 {
 @media (min-width: 1024px) {
   .sedi-lista {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 599px) {
+  .site-header {
+    padding: .75rem 0;
   }
 }
 .info-swiper .swiper-button-prev:focus-visible,
